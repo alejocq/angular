@@ -1,0 +1,24 @@
+<h2>Data Binding</h2>
+
+<h2>String Interpolation</h2>
+<p>Me llamo {{nombre}}</p>
+<p>Me llamo {{editando ? '****': nombre}}</p>
+
+<h3>Property Binding</h3>
+<input type="text" [disabled]="!editando" id="">
+
+<h3>Event Binding</h3>
+
+<button type="button" (click)="toggleEditando()">Cambiar editando({{editando ? 'habilitado': 'Deshabilitado'}})</button>
+
+<h3>Two-Way Binding</h3>
+<input type="text" [(ngModel)]="nombre">
+<button type="button" (click)="resetNombre()">Reset nombre</button><br><br>
+
+<input type="text" [value]='nombre' (input)="cambiarNombre($event)">
+
+
+<h3>Referencias</h3>
+<input type="text" #inputRef>
+<button type="button" (click)="mostrar(inputRef)">Mostrar inputRef</button>
+

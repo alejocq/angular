@@ -1,0 +1,36 @@
+.card{
+    width: 200px;
+    border: 1px solid  black;
+    box-shadow: 5px 5px 10px gray;
+    padding: 15px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100px;
+}
+
+button{
+    border: 1px solid darkgrey;
+    background-color: rgba(235, 235, 235, 0.808);
+    width: 90px;
+    height: 40px;
+    padding: 5px;
+}
+
+button:hover{
+     color: black;
+     background-color: rgba(173, 171, 171, 0.781);
+}
+
+div.card h1{
+    text-align: center;
+}
+
+.con-flex{
+    display: flex;
+    justify-content: center;
+}
+/* .circulo img{
+
+    border-radius: 50%;
+} */
