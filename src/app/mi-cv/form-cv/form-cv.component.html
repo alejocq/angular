@@ -1,12 +1,12 @@
-<p>Nombre</p>
-<input type="text" name="" id="" [(ngModel)]="nombre"> <br>
-<p>Apellidos</p>
-<input type="text" [(ngModel)]="apellido"><br>
-<p>Email</p>
-<input type="text" [(ngModel)]="email"><br>
-<p>Foto</p>
-<input type="text" [(ngModel)]="imgURL"><br>
-<p>skill</p>
+<label>Nombre: </label>
+<input type="text" name="" id="" [(ngModel)]="nombre"> <br><br>
+<label>Apellidos</label>
+<input type="text" [(ngModel)]="apellido"><br><br>
+<label>Email</label>
+<input type="text" [(ngModel)]="email"><br><br>
+<label>Foto</label>
+<input type="text" [(ngModel)]="imgURL"><br><br>
+<label>skill</label>
 <input type="text" name="" #skill>
-<button (click)='agregarSkill(skill)'>Añadir Skill</button>
-<app-preview-cv [nombre]="nombre" [apellido]="apellido" [imgURL]='imgURL' [email]='email' ()></app-preview-cv>
+<button (click)='agregar(skill)'>Añadir Skill</button>
+<app-preview-cv [nombre]="nombre" [apellido]="apellido" [imgURL]='imgURL' [email]='email' [skills]='skills'></app-preview-cv>

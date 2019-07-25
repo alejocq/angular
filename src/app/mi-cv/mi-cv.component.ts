@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mi-cv',
@@ -6,11 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mi-cv.component.css']
 })
 export class MiCvComponent implements OnInit {
-  nombre = '';
-  apellido = '';
+  nombre = 'Alejandro';
+  apellido = 'Cardona';
+  foto = '';
+  email = '';
+
+  skills: Array<string> = [];
   constructor() { }
 
   ngOnInit() {
   }
-
+  
+  agregarString(event){
+    this.skills.push(event);
+    console.log(this.skills)
+  }
 }

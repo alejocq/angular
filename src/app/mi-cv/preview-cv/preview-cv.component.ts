@@ -10,13 +10,10 @@ export class PreviewCvComponent implements OnInit {
   @Input() apellido = '';
   @Input() imgURL = '';
   @Input() email = '';
-  @Input() skills: Array<string> = [];
+  @Input() skills : Array<string> = [];
   constructor() { }
 
   ngOnInit() {
-  }
-  agregarString(event){
-    this.skills.push(event);
-  }
+  }  
 
 }
