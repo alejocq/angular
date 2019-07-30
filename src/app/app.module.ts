@@ -35,6 +35,12 @@ import { UsuariosComponent } from './cmp-routing/usuarios/usuarios.component';
 import { InfoUsuarioComponent } from './cmp-routing/usuarios/info-usuario/info-usuario.component';
 import { EditarUsuarioComponent } from './cmp-routing/usuarios/editar-usuario/editar-usuario.component';
 import { Routing } from './cmp-routing/app.routes';
+import { CmpHttpComponent } from './cmp-http/cmp-http.component';
+import { CardJobComponent } from './cmp-http/card-job/card-job.component';
+import { JobListComponent } from './cmp-http/job-list/job-list.component';
+import { ObservableComponent } from './cmp-http/observable/observable.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -69,13 +75,18 @@ import { Routing } from './cmp-routing/app.routes';
     ErrorComponent,
     UsuariosComponent,
     InfoUsuarioComponent,
-    EditarUsuarioComponent
+    EditarUsuarioComponent,
+    CmpHttpComponent,
+    CardJobComponent,
+    JobListComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    Routing
+    Routing,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
